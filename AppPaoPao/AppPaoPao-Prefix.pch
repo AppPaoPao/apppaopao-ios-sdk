@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'AppPaoPao' target in the 'AppPaoPao' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
