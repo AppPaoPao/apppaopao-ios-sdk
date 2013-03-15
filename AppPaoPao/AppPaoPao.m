@@ -13,11 +13,8 @@
 
 + (void) presentFeedbackFromViewController:viewController
 {
-    NSString *path = [[NSBundle mainBundle] bundlePath];
-	NSString *bundlePath = [path stringByAppendingPathComponent:@"AppPaoPaoResources.bundle"];
-	NSBundle *bundle = [[NSBundle alloc] initWithPath:bundlePath];
-    
     APPFeedbackViewController *vc = [[APPFeedbackViewController alloc] init];
+    vc.modalPresentationStyle = UIModalPresentationFormSheet;
     [viewController presentViewController:vc animated:TRUE completion:nil];
 }
 @end
