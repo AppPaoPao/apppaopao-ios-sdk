@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9164B7D616F31BD9007D6824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9164B7D516F31BD9007D6824 /* UIKit.framework */; };
+		9164B7D816F31BEB007D6824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9164B7D716F31BEB007D6824 /* CoreGraphics.framework */; };
 		9165F5EB16F22A17006C7584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9165F5EA16F22A17006C7584 /* Foundation.framework */; };
 		9165F5F016F22A17006C7584 /* AppPaoPao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9165F5EF16F22A17006C7584 /* AppPaoPao.h */; };
 		9165F5F216F22A17006C7584 /* AppPaoPao.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165F5F116F22A17006C7584 /* AppPaoPao.m */; };
+		9165F5FB16F22A3E006C7584 /* APPFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */; };
+		9165F6D116F30E41006C7584 /* APPFeedbackViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */; };
+		9165F6D316F30E81006C7584 /* APPFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,6 +24,7 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				9165F6D116F30E41006C7584 /* APPFeedbackViewController.h in CopyFiles */,
 				9165F5F016F22A17006C7584 /* AppPaoPao.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -26,11 +32,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9164B7D516F31BD9007D6824 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9164B7D716F31BEB007D6824 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9165F5E716F22A17006C7584 /* libAppPaoPao.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppPaoPao.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9165F5EA16F22A17006C7584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9165F5EE16F22A17006C7584 /* AppPaoPao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPaoPao-Prefix.pch"; sourceTree = "<group>"; };
 		9165F5EF16F22A17006C7584 /* AppPaoPao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppPaoPao.h; sourceTree = "<group>"; };
 		9165F5F116F22A17006C7584 /* AppPaoPao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppPaoPao.m; sourceTree = "<group>"; };
+		9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPFeedbackViewController.h; sourceTree = "<group>"; };
+		9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPFeedbackViewController.m; sourceTree = "<group>"; };
+		9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APPFeedbackViewController.xib; path = AppPaoPao/APPFeedbackViewController.xib; sourceTree = "<group>"; };
+		9165F60716F2FA86006C7584 /* AppPaoPaoResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPaoPaoResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9165F60816F2FA86006C7584 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9165F60C16F2FA86006C7584 /* AppPaoPaoResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppPaoPaoResources-Info.plist"; sourceTree = "<group>"; };
+		9165F60E16F2FA86006C7584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9165F61016F2FA86006C7584 /* AppPaoPaoResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPaoPaoResources-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +54,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9164B7D816F31BEB007D6824 /* CoreGraphics.framework in Frameworks */,
+				9164B7D616F31BD9007D6824 /* UIKit.framework in Frameworks */,
 				9165F5EB16F22A17006C7584 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9165F60416F2FA86006C7584 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,7 +73,11 @@
 		9165F5DE16F22A17006C7584 = {
 			isa = PBXGroup;
 			children = (
+				9164B7D716F31BEB007D6824 /* CoreGraphics.framework */,
+				9164B7D516F31BD9007D6824 /* UIKit.framework */,
 				9165F5EC16F22A17006C7584 /* AppPaoPao */,
+				9165F60A16F2FA86006C7584 /* AppPaoPaoResources */,
+				9165F6D216F30E4C006C7584 /* xibs */,
 				9165F5E916F22A17006C7584 /* Frameworks */,
 				9165F5E816F22A17006C7584 /* Products */,
 			);
@@ -58,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				9165F5E716F22A17006C7584 /* libAppPaoPao.a */,
+				9165F60716F2FA86006C7584 /* AppPaoPaoResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9165F5EA16F22A17006C7584 /* Foundation.framework */,
+				9165F60816F2FA86006C7584 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -75,6 +106,8 @@
 			children = (
 				9165F5EF16F22A17006C7584 /* AppPaoPao.h */,
 				9165F5F116F22A17006C7584 /* AppPaoPao.m */,
+				9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */,
+				9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */,
 				9165F5ED16F22A17006C7584 /* Supporting Files */,
 			);
 			path = AppPaoPao;
@@ -86,6 +119,32 @@
 				9165F5EE16F22A17006C7584 /* AppPaoPao-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9165F60A16F2FA86006C7584 /* AppPaoPaoResources */ = {
+			isa = PBXGroup;
+			children = (
+				9165F60B16F2FA86006C7584 /* Supporting Files */,
+			);
+			path = AppPaoPaoResources;
+			sourceTree = "<group>";
+		};
+		9165F60B16F2FA86006C7584 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9165F60C16F2FA86006C7584 /* AppPaoPaoResources-Info.plist */,
+				9165F60D16F2FA86006C7584 /* InfoPlist.strings */,
+				9165F61016F2FA86006C7584 /* AppPaoPaoResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9165F6D216F30E4C006C7584 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */,
+			);
+			name = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +166,23 @@
 			productName = AppPaoPao;
 			productReference = 9165F5E716F22A17006C7584 /* libAppPaoPao.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		9165F60616F2FA86006C7584 /* AppPaoPaoResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9165F61116F2FA86006C7584 /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */;
+			buildPhases = (
+				9165F60316F2FA86006C7584 /* Sources */,
+				9165F60416F2FA86006C7584 /* Frameworks */,
+				9165F60516F2FA86006C7584 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppPaoPaoResources;
+			productName = AppPaoPaoResources;
+			productReference = 9165F60716F2FA86006C7584 /* AppPaoPaoResources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -130,9 +206,21 @@
 			projectRoot = "";
 			targets = (
 				9165F5E616F22A17006C7584 /* AppPaoPao */,
+				9165F60616F2FA86006C7584 /* AppPaoPaoResources */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9165F60516F2FA86006C7584 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9165F6D316F30E81006C7584 /* APPFeedbackViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9165F5E316F22A17006C7584 /* Sources */ = {
@@ -140,10 +228,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				9165F5F216F22A17006C7584 /* AppPaoPao.m in Sources */,
+				9165F5FB16F22A3E006C7584 /* APPFeedbackViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9165F60316F2FA86006C7584 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9165F60D16F2FA86006C7584 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9165F60E16F2FA86006C7584 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9165F5F316F22A17006C7584 /* Debug */ = {
@@ -223,6 +330,43 @@
 			};
 			name = Release;
 		};
+		9165F61216F2FA86006C7584 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppPaoPaoResources/AppPaoPaoResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "AppPaoPaoResources/AppPaoPaoResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		9165F61316F2FA86006C7584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AppPaoPaoResources/AppPaoPaoResources-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "AppPaoPaoResources/AppPaoPaoResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -242,6 +386,16 @@
 				9165F5F716F22A17006C7584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9165F61116F2FA86006C7584 /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9165F61216F2FA86006C7584 /* Debug */,
+				9165F61316F2FA86006C7584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

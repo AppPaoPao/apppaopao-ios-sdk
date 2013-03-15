@@ -10,4 +10,5 @@
 
 @interface AppPaoPao : NSObject
 
++ (void) presentFeedbackFromViewController:controller;
 @end
