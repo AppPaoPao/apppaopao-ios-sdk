@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9164B7D616F31BD9007D6824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9164B7D516F31BD9007D6824 /* UIKit.framework */; };
 		9164B7D816F31BEB007D6824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9164B7D716F31BEB007D6824 /* CoreGraphics.framework */; };
+		9164B7DE16F4BB96007D6824 /* APPHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9164B7DD16F4BB95007D6824 /* APPHttpClient.m */; };
 		9165F5EB16F22A17006C7584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9165F5EA16F22A17006C7584 /* Foundation.framework */; };
 		9165F5F016F22A17006C7584 /* AppPaoPao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9165F5EF16F22A17006C7584 /* AppPaoPao.h */; };
 		9165F5F216F22A17006C7584 /* AppPaoPao.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165F5F116F22A17006C7584 /* AppPaoPao.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		9164B7D516F31BD9007D6824 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9164B7D716F31BEB007D6824 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9164B7DC16F4BB95007D6824 /* APPHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPHttpClient.h; sourceTree = "<group>"; };
+		9164B7DD16F4BB95007D6824 /* APPHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPHttpClient.m; sourceTree = "<group>"; };
 		9165F5E716F22A17006C7584 /* libAppPaoPao.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppPaoPao.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9165F5EA16F22A17006C7584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9165F5EE16F22A17006C7584 /* AppPaoPao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPaoPao-Prefix.pch"; sourceTree = "<group>"; };
@@ -108,6 +111,8 @@
 				9165F5F116F22A17006C7584 /* AppPaoPao.m */,
 				9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */,
 				9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */,
+				9164B7DC16F4BB95007D6824 /* APPHttpClient.h */,
+				9164B7DD16F4BB95007D6824 /* APPHttpClient.m */,
 				9165F5ED16F22A17006C7584 /* Supporting Files */,
 			);
 			path = AppPaoPao;
@@ -229,6 +234,7 @@
 			files = (
 				9165F5F216F22A17006C7584 /* AppPaoPao.m in Sources */,
 				9165F5FB16F22A3E006C7584 /* APPFeedbackViewController.m in Sources */,
+				9164B7DE16F4BB96007D6824 /* APPHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "APPFeedbackViewController.h"
+#import "APPHttpClient.h"
 
 @interface APPFeedbackViewController ()
 
@@ -27,7 +28,7 @@
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"AppPaoPaoResources" withExtension:@"bundle"]];
     self = [self initWithNibName:@"APPFeedbackViewController" bundle:bundle];
     if (self) {
-        
+        [APPHttpClient sendFeedback];
     }
     return self;
 }

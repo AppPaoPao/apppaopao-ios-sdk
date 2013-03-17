@@ -7,8 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface AppPaoPao : NSObject
 
-+ (void) presentFeedbackFromViewController:controller;
+@property (strong, nonatomic) NSString *apiKey;
+@property (strong, nonatomic) NSString *apiSecret;
+
++ (void) setApiKey:(NSString *)apiKey;
++ (void) setApiSecret:(NSString *)apiSecret;
++ (void) presentFeedbackFromViewController:(UIViewController *)controller;
++ (AppPaoPao *) sharedConnection;
 @end
