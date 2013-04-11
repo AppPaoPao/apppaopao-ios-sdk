@@ -28,7 +28,7 @@
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"AppPaoPaoResources" withExtension:@"bundle"]];
     self = [self initWithNibName:@"APPFeedbackViewController" bundle:bundle];
     if (self) {
-        [APPHttpClient sendFeedback];
+        
     }
     return self;
 }
@@ -45,4 +45,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)sendFeedback:(id)sender {
+    APPHttpClient *client = [[APPHttpClient alloc] init];
+    [client sendFeedback:self.titleTextField.text content:self.contentTextView.text userEmail:self.emailTextField.text userPhone:self.phoneTextField.text];
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (IBAction)cancelFeedback:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
 @end

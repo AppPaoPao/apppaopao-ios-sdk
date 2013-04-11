@@ -16,6 +16,7 @@
 		9165F5FB16F22A3E006C7584 /* APPFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */; };
 		9165F6D116F30E41006C7584 /* APPFeedbackViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */; };
 		9165F6D316F30E81006C7584 /* APPFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */; };
+		917496631716845200A2F183 /* MACAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 917496621716845200A2F183 /* MACAddress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,8 @@
 		9165F60C16F2FA86006C7584 /* AppPaoPaoResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppPaoPaoResources-Info.plist"; sourceTree = "<group>"; };
 		9165F60E16F2FA86006C7584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9165F61016F2FA86006C7584 /* AppPaoPaoResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPaoPaoResources-Prefix.pch"; sourceTree = "<group>"; };
+		917496611716845200A2F183 /* MACAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACAddress.h; sourceTree = "<group>"; };
+		917496621716845200A2F183 /* MACAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACAddress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				9164B7DC16F4BB95007D6824 /* APPHttpClient.h */,
 				9164B7DD16F4BB95007D6824 /* APPHttpClient.m */,
 				9165F5ED16F22A17006C7584 /* Supporting Files */,
+				917496611716845200A2F183 /* MACAddress.h */,
+				917496621716845200A2F183 /* MACAddress.m */,
 			);
 			path = AppPaoPao;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				9165F5F216F22A17006C7584 /* AppPaoPao.m in Sources */,
 				9165F5FB16F22A3E006C7584 /* APPFeedbackViewController.m in Sources */,
 				9164B7DE16F4BB96007D6824 /* APPHttpClient.m in Sources */,
+				917496631716845200A2F183 /* MACAddress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

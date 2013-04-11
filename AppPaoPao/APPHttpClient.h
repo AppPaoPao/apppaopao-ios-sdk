@@ -10,5 +10,5 @@
 
 @interface APPHttpClient : NSObject
 
-+(void) sendFeedback;
+-(void) sendFeedback:(NSString *)title content:(NSString *)content userEmail:(NSString *)email userPhone:(NSString *)phone;
 @end

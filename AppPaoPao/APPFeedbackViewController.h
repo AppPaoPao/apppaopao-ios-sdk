@@ -10,4 +10,11 @@
 
 @interface APPFeedbackViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *emailTextField;
+@property (strong, nonatomic) IBOutlet UITextField *phoneTextField;
+@property (strong, nonatomic) IBOutlet UITextField *titleTextField;
+@property (strong, nonatomic) IBOutlet UITextView *contentTextView;
+- (IBAction)sendFeedback:(id)sender;
+- (IBAction)cancelFeedback:(id)sender;
+
 @end
