@@ -27,8 +27,16 @@
 - (id)init {
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"AppPaoPaoResources" withExtension:@"bundle"]];
     self = [self initWithNibName:@"APPFeedbackViewController" bundle:bundle];
+    
+    NSString *bundleRoot = [[NSBundle mainBundle] bundlePath];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSArray *dirContents = [fm contentsOfDirectoryAtPath:bundleRoot error:nil];
+    
+    NSLog(@"content of bundle ::%@", dirContents);
+    
     if (self) {
-        
+        self.view.backgroundColor = [UIColor blackColor];
+        self.view.alpha = 1.0;
     }
     return self;
 }

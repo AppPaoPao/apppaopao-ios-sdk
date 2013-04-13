@@ -7,25 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9164B7D616F31BD9007D6824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9164B7D516F31BD9007D6824 /* UIKit.framework */; };
-		9164B7D816F31BEB007D6824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9164B7D716F31BEB007D6824 /* CoreGraphics.framework */; };
+		9123BC42171950D70020054D /* APPHttpClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9164B7DC16F4BB95007D6824 /* APPHttpClient.h */; };
+		9123BC43171950DB0020054D /* MACAddress.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 917496611716845200A2F183 /* MACAddress.h */; };
 		9164B7DE16F4BB96007D6824 /* APPHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9164B7DD16F4BB95007D6824 /* APPHttpClient.m */; };
 		9165F5EB16F22A17006C7584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9165F5EA16F22A17006C7584 /* Foundation.framework */; };
 		9165F5F016F22A17006C7584 /* AppPaoPao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9165F5EF16F22A17006C7584 /* AppPaoPao.h */; };
 		9165F5F216F22A17006C7584 /* AppPaoPao.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165F5F116F22A17006C7584 /* AppPaoPao.m */; };
 		9165F5FB16F22A3E006C7584 /* APPFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */; };
 		9165F6D116F30E41006C7584 /* APPFeedbackViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */; };
-		9165F6D316F30E81006C7584 /* APPFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */; };
 		917496631716845200A2F183 /* MACAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 917496621716845200A2F183 /* MACAddress.m */; };
+		91A1EC301719803C003C720C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9165F60816F2FA86006C7584 /* CoreFoundation.framework */; };
+		91A1EC3B1719825C003C720C /* APPFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */; };
+		91A1EC3C17198279003C720C /* cancel-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D2171922B000AEE795 /* cancel-btn.png */; };
+		91A1EC3D17198279003C720C /* cancel-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D3171922B000AEE795 /* cancel-btn@2x.png */; };
+		91A1EC3E17198279003C720C /* send-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D4171922B000AEE795 /* send-btn.png */; };
+		91A1EC3F17198279003C720C /* send-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D5171922B000AEE795 /* send-btn@2x.png */; };
+		91A1EC4017198279003C720C /* iphone-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D017191C0D00AEE795 /* iphone-bg.png */; };
+		91A1EC4117198279003C720C /* iphone-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D117191DC200AEE795 /* iphone-bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9165F5E516F22A17006C7584 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
+			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				9123BC43171950DB0020054D /* MACAddress.h in CopyFiles */,
+				9123BC42171950D70020054D /* APPHttpClient.h in CopyFiles */,
 				9165F6D116F30E41006C7584 /* APPFeedbackViewController.h in CopyFiles */,
 				9165F5F016F22A17006C7584 /* AppPaoPao.h in CopyFiles */,
 			);
@@ -34,8 +43,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9164B7D516F31BD9007D6824 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9164B7D716F31BEB007D6824 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9164B7DC16F4BB95007D6824 /* APPHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPHttpClient.h; sourceTree = "<group>"; };
 		9164B7DD16F4BB95007D6824 /* APPHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPHttpClient.m; sourceTree = "<group>"; };
 		9165F5E716F22A17006C7584 /* libAppPaoPao.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppPaoPao.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,14 +52,17 @@
 		9165F5F116F22A17006C7584 /* AppPaoPao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppPaoPao.m; sourceTree = "<group>"; };
 		9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPFeedbackViewController.h; sourceTree = "<group>"; };
 		9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPFeedbackViewController.m; sourceTree = "<group>"; };
-		9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APPFeedbackViewController.xib; path = AppPaoPao/APPFeedbackViewController.xib; sourceTree = "<group>"; };
-		9165F60716F2FA86006C7584 /* AppPaoPaoResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPaoPaoResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPFeedbackViewController.xib; sourceTree = "<group>"; };
 		9165F60816F2FA86006C7584 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		9165F60C16F2FA86006C7584 /* AppPaoPaoResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppPaoPaoResources-Info.plist"; sourceTree = "<group>"; };
-		9165F60E16F2FA86006C7584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9165F61016F2FA86006C7584 /* AppPaoPaoResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPaoPaoResources-Prefix.pch"; sourceTree = "<group>"; };
 		917496611716845200A2F183 /* MACAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACAddress.h; sourceTree = "<group>"; };
 		917496621716845200A2F183 /* MACAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACAddress.m; sourceTree = "<group>"; };
+		917FA3D017191C0D00AEE795 /* iphone-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-bg.png"; sourceTree = "<group>"; };
+		917FA3D117191DC200AEE795 /* iphone-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-bg@2x.png"; sourceTree = "<group>"; };
+		917FA3D2171922B000AEE795 /* cancel-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-btn.png"; sourceTree = "<group>"; };
+		917FA3D3171922B000AEE795 /* cancel-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-btn@2x.png"; sourceTree = "<group>"; };
+		917FA3D4171922B000AEE795 /* send-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-btn.png"; sourceTree = "<group>"; };
+		917FA3D5171922B000AEE795 /* send-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-btn@2x.png"; sourceTree = "<group>"; };
+		91A1EC2F1719803C003C720C /* AppPaoPaoResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPaoPaoResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,16 +70,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9164B7D816F31BEB007D6824 /* CoreGraphics.framework in Frameworks */,
-				9164B7D616F31BD9007D6824 /* UIKit.framework in Frameworks */,
 				9165F5EB16F22A17006C7584 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9165F60416F2FA86006C7584 /* Frameworks */ = {
+		91A1EC2C1719803C003C720C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A1EC301719803C003C720C /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +88,7 @@
 		9165F5DE16F22A17006C7584 = {
 			isa = PBXGroup;
 			children = (
-				9164B7D716F31BEB007D6824 /* CoreGraphics.framework */,
-				9164B7D516F31BD9007D6824 /* UIKit.framework */,
 				9165F5EC16F22A17006C7584 /* AppPaoPao */,
-				9165F60A16F2FA86006C7584 /* AppPaoPaoResources */,
-				9165F6D216F30E4C006C7584 /* xibs */,
 				9165F5E916F22A17006C7584 /* Frameworks */,
 				9165F5E816F22A17006C7584 /* Products */,
 			);
@@ -93,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				9165F5E716F22A17006C7584 /* libAppPaoPao.a */,
-				9165F60716F2FA86006C7584 /* AppPaoPaoResources.bundle */,
+				91A1EC2F1719803C003C720C /* AppPaoPaoResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,11 +119,18 @@
 				9165F5F116F22A17006C7584 /* AppPaoPao.m */,
 				9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */,
 				9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */,
+				9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */,
 				9164B7DC16F4BB95007D6824 /* APPHttpClient.h */,
 				9164B7DD16F4BB95007D6824 /* APPHttpClient.m */,
-				9165F5ED16F22A17006C7584 /* Supporting Files */,
 				917496611716845200A2F183 /* MACAddress.h */,
 				917496621716845200A2F183 /* MACAddress.m */,
+				917FA3D2171922B000AEE795 /* cancel-btn.png */,
+				917FA3D3171922B000AEE795 /* cancel-btn@2x.png */,
+				917FA3D4171922B000AEE795 /* send-btn.png */,
+				917FA3D5171922B000AEE795 /* send-btn@2x.png */,
+				917FA3D017191C0D00AEE795 /* iphone-bg.png */,
+				917FA3D117191DC200AEE795 /* iphone-bg@2x.png */,
+				9165F5ED16F22A17006C7584 /* Supporting Files */,
 			);
 			path = AppPaoPao;
 			sourceTree = "<group>";
@@ -129,32 +141,6 @@
 				9165F5EE16F22A17006C7584 /* AppPaoPao-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9165F60A16F2FA86006C7584 /* AppPaoPaoResources */ = {
-			isa = PBXGroup;
-			children = (
-				9165F60B16F2FA86006C7584 /* Supporting Files */,
-			);
-			path = AppPaoPaoResources;
-			sourceTree = "<group>";
-		};
-		9165F60B16F2FA86006C7584 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9165F60C16F2FA86006C7584 /* AppPaoPaoResources-Info.plist */,
-				9165F60D16F2FA86006C7584 /* InfoPlist.strings */,
-				9165F61016F2FA86006C7584 /* AppPaoPaoResources-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9165F6D216F30E4C006C7584 /* xibs */ = {
-			isa = PBXGroup;
-			children = (
-				9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */,
-			);
-			name = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,13 +163,13 @@
 			productReference = 9165F5E716F22A17006C7584 /* libAppPaoPao.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		9165F60616F2FA86006C7584 /* AppPaoPaoResources */ = {
+		91A1EC2E1719803C003C720C /* AppPaoPaoResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9165F61116F2FA86006C7584 /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */;
+			buildConfigurationList = 91A1EC381719803C003C720C /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */;
 			buildPhases = (
-				9165F60316F2FA86006C7584 /* Sources */,
-				9165F60416F2FA86006C7584 /* Frameworks */,
-				9165F60516F2FA86006C7584 /* Resources */,
+				91A1EC2B1719803C003C720C /* Sources */,
+				91A1EC2C1719803C003C720C /* Frameworks */,
+				91A1EC2D1719803C003C720C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -191,7 +177,7 @@
 			);
 			name = AppPaoPaoResources;
 			productName = AppPaoPaoResources;
-			productReference = 9165F60716F2FA86006C7584 /* AppPaoPaoResources.bundle */;
+			productReference = 91A1EC2F1719803C003C720C /* AppPaoPaoResources.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -216,17 +202,23 @@
 			projectRoot = "";
 			targets = (
 				9165F5E616F22A17006C7584 /* AppPaoPao */,
-				9165F60616F2FA86006C7584 /* AppPaoPaoResources */,
+				91A1EC2E1719803C003C720C /* AppPaoPaoResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9165F60516F2FA86006C7584 /* Resources */ = {
+		91A1EC2D1719803C003C720C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9165F6D316F30E81006C7584 /* APPFeedbackViewController.xib in Resources */,
+				91A1EC3C17198279003C720C /* cancel-btn.png in Resources */,
+				91A1EC3D17198279003C720C /* cancel-btn@2x.png in Resources */,
+				91A1EC3E17198279003C720C /* send-btn.png in Resources */,
+				91A1EC3F17198279003C720C /* send-btn@2x.png in Resources */,
+				91A1EC4017198279003C720C /* iphone-bg.png in Resources */,
+				91A1EC4117198279003C720C /* iphone-bg@2x.png in Resources */,
+				91A1EC3B1719825C003C720C /* APPFeedbackViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9165F60316F2FA86006C7584 /* Sources */ = {
+		91A1EC2B1719803C003C720C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,17 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		9165F60D16F2FA86006C7584 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9165F60E16F2FA86006C7584 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9165F5F316F22A17006C7584 /* Debug */ = {
@@ -342,7 +323,7 @@
 			};
 			name = Release;
 		};
-		9165F61216F2FA86006C7584 /* Debug */ = {
+		91A1EC391719803C003C720C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -360,7 +341,7 @@
 			};
 			name = Debug;
 		};
-		9165F61316F2FA86006C7584 /* Release */ = {
+		91A1EC3A1719803C003C720C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -400,14 +381,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9165F61116F2FA86006C7584 /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */ = {
+		91A1EC381719803C003C720C /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9165F61216F2FA86006C7584 /* Debug */,
-				9165F61316F2FA86006C7584 /* Release */,
+				91A1EC391719803C003C720C /* Debug */,
+				91A1EC3A1719803C003C720C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
