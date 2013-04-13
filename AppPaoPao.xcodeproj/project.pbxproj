@@ -15,15 +15,16 @@
 		9165F5F216F22A17006C7584 /* AppPaoPao.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165F5F116F22A17006C7584 /* AppPaoPao.m */; };
 		9165F5FB16F22A3E006C7584 /* APPFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */; };
 		9165F6D116F30E41006C7584 /* APPFeedbackViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9165F5F816F22A3E006C7584 /* APPFeedbackViewController.h */; };
+		916CA8F91719896C005452B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9165F60816F2FA86006C7584 /* CoreFoundation.framework */; };
+		916CA8FF1719896C005452B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 916CA8FD1719896C005452B9 /* InfoPlist.strings */; };
+		916CA904171989E9005452B9 /* APPFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */; };
+		916CA905171989EE005452B9 /* cancel-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D2171922B000AEE795 /* cancel-btn.png */; };
+		916CA906171989EE005452B9 /* cancel-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D3171922B000AEE795 /* cancel-btn@2x.png */; };
+		916CA907171989EE005452B9 /* send-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D4171922B000AEE795 /* send-btn.png */; };
+		916CA908171989EE005452B9 /* send-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D5171922B000AEE795 /* send-btn@2x.png */; };
+		916CA909171989EE005452B9 /* iphone-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D017191C0D00AEE795 /* iphone-bg.png */; };
+		916CA90A171989EE005452B9 /* iphone-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D117191DC200AEE795 /* iphone-bg@2x.png */; };
 		917496631716845200A2F183 /* MACAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 917496621716845200A2F183 /* MACAddress.m */; };
-		91A1EC301719803C003C720C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9165F60816F2FA86006C7584 /* CoreFoundation.framework */; };
-		91A1EC3B1719825C003C720C /* APPFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */; };
-		91A1EC3C17198279003C720C /* cancel-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D2171922B000AEE795 /* cancel-btn.png */; };
-		91A1EC3D17198279003C720C /* cancel-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D3171922B000AEE795 /* cancel-btn@2x.png */; };
-		91A1EC3E17198279003C720C /* send-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D4171922B000AEE795 /* send-btn.png */; };
-		91A1EC3F17198279003C720C /* send-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D5171922B000AEE795 /* send-btn@2x.png */; };
-		91A1EC4017198279003C720C /* iphone-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D017191C0D00AEE795 /* iphone-bg.png */; };
-		91A1EC4117198279003C720C /* iphone-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D117191DC200AEE795 /* iphone-bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,10 @@
 		9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPFeedbackViewController.m; sourceTree = "<group>"; };
 		9165F5FA16F22A3E006C7584 /* APPFeedbackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPFeedbackViewController.xib; sourceTree = "<group>"; };
 		9165F60816F2FA86006C7584 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		916CA8F81719896C005452B9 /* AppPaoPaoResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPaoPaoResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		916CA8FC1719896C005452B9 /* AppPaoPaoResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppPaoPaoResources-Info.plist"; sourceTree = "<group>"; };
+		916CA8FE1719896C005452B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		916CA9001719896C005452B9 /* AppPaoPaoResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppPaoPaoResources-Prefix.pch"; sourceTree = "<group>"; };
 		917496611716845200A2F183 /* MACAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACAddress.h; sourceTree = "<group>"; };
 		917496621716845200A2F183 /* MACAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACAddress.m; sourceTree = "<group>"; };
 		917FA3D017191C0D00AEE795 /* iphone-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-bg.png"; sourceTree = "<group>"; };
@@ -62,7 +67,6 @@
 		917FA3D3171922B000AEE795 /* cancel-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-btn@2x.png"; sourceTree = "<group>"; };
 		917FA3D4171922B000AEE795 /* send-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-btn.png"; sourceTree = "<group>"; };
 		917FA3D5171922B000AEE795 /* send-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-btn@2x.png"; sourceTree = "<group>"; };
-		91A1EC2F1719803C003C720C /* AppPaoPaoResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppPaoPaoResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +78,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91A1EC2C1719803C003C720C /* Frameworks */ = {
+		916CA8F51719896C005452B9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A1EC301719803C003C720C /* CoreFoundation.framework in Frameworks */,
+				916CA8F91719896C005452B9 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9165F5EC16F22A17006C7584 /* AppPaoPao */,
+				916CA8FA1719896C005452B9 /* AppPaoPaoResources */,
 				9165F5E916F22A17006C7584 /* Frameworks */,
 				9165F5E816F22A17006C7584 /* Products */,
 			);
@@ -98,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				9165F5E716F22A17006C7584 /* libAppPaoPao.a */,
-				91A1EC2F1719803C003C720C /* AppPaoPaoResources.bundle */,
+				916CA8F81719896C005452B9 /* AppPaoPaoResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +148,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		916CA8FA1719896C005452B9 /* AppPaoPaoResources */ = {
+			isa = PBXGroup;
+			children = (
+				916CA8FB1719896C005452B9 /* Supporting Files */,
+			);
+			path = AppPaoPaoResources;
+			sourceTree = "<group>";
+		};
+		916CA8FB1719896C005452B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				916CA8FC1719896C005452B9 /* AppPaoPaoResources-Info.plist */,
+				916CA8FD1719896C005452B9 /* InfoPlist.strings */,
+				916CA9001719896C005452B9 /* AppPaoPaoResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,13 +186,13 @@
 			productReference = 9165F5E716F22A17006C7584 /* libAppPaoPao.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		91A1EC2E1719803C003C720C /* AppPaoPaoResources */ = {
+		916CA8F71719896C005452B9 /* AppPaoPaoResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91A1EC381719803C003C720C /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */;
+			buildConfigurationList = 916CA9011719896C005452B9 /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */;
 			buildPhases = (
-				91A1EC2B1719803C003C720C /* Sources */,
-				91A1EC2C1719803C003C720C /* Frameworks */,
-				91A1EC2D1719803C003C720C /* Resources */,
+				916CA8F41719896C005452B9 /* Sources */,
+				916CA8F51719896C005452B9 /* Frameworks */,
+				916CA8F61719896C005452B9 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -177,7 +200,7 @@
 			);
 			name = AppPaoPaoResources;
 			productName = AppPaoPaoResources;
-			productReference = 91A1EC2F1719803C003C720C /* AppPaoPaoResources.bundle */;
+			productReference = 916CA8F81719896C005452B9 /* AppPaoPaoResources.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -202,23 +225,24 @@
 			projectRoot = "";
 			targets = (
 				9165F5E616F22A17006C7584 /* AppPaoPao */,
-				91A1EC2E1719803C003C720C /* AppPaoPaoResources */,
+				916CA8F71719896C005452B9 /* AppPaoPaoResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		91A1EC2D1719803C003C720C /* Resources */ = {
+		916CA8F61719896C005452B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A1EC3C17198279003C720C /* cancel-btn.png in Resources */,
-				91A1EC3D17198279003C720C /* cancel-btn@2x.png in Resources */,
-				91A1EC3E17198279003C720C /* send-btn.png in Resources */,
-				91A1EC3F17198279003C720C /* send-btn@2x.png in Resources */,
-				91A1EC4017198279003C720C /* iphone-bg.png in Resources */,
-				91A1EC4117198279003C720C /* iphone-bg@2x.png in Resources */,
-				91A1EC3B1719825C003C720C /* APPFeedbackViewController.xib in Resources */,
+				916CA904171989E9005452B9 /* APPFeedbackViewController.xib in Resources */,
+				916CA905171989EE005452B9 /* cancel-btn.png in Resources */,
+				916CA906171989EE005452B9 /* cancel-btn@2x.png in Resources */,
+				916CA907171989EE005452B9 /* send-btn.png in Resources */,
+				916CA908171989EE005452B9 /* send-btn@2x.png in Resources */,
+				916CA909171989EE005452B9 /* iphone-bg.png in Resources */,
+				916CA90A171989EE005452B9 /* iphone-bg@2x.png in Resources */,
+				916CA8FF1719896C005452B9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +260,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91A1EC2B1719803C003C720C /* Sources */ = {
+		916CA8F41719896C005452B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -244,6 +268,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		916CA8FD1719896C005452B9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				916CA8FE1719896C005452B9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9165F5F316F22A17006C7584 /* Debug */ = {
@@ -323,11 +358,11 @@
 			};
 			name = Release;
 		};
-		91A1EC391719803C003C720C /* Debug */ = {
+		916CA9021719896C005452B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AppPaoPaoResources/AppPaoPaoResources-Prefix.pch";
@@ -341,11 +376,11 @@
 			};
 			name = Debug;
 		};
-		91A1EC3A1719803C003C720C /* Release */ = {
+		916CA9031719896C005452B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COMBINE_HIDPI_IMAGES = YES;
+				COMBINE_HIDPI_IMAGES = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -381,11 +416,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91A1EC381719803C003C720C /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */ = {
+		916CA9011719896C005452B9 /* Build configuration list for PBXNativeTarget "AppPaoPaoResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				91A1EC391719803C003C720C /* Debug */,
-				91A1EC3A1719803C003C720C /* Release */,
+				916CA9021719896C005452B9 /* Debug */,
+				916CA9031719896C005452B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

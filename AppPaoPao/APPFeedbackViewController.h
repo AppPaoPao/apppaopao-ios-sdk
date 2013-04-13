@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface APPFeedbackViewController : UIViewController
+@interface APPFeedbackViewController : UIViewController <UITextViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *emailTextField;
 @property (strong, nonatomic) IBOutlet UITextField *phoneTextField;
