@@ -10,6 +10,8 @@
 #import "AppPaoPao.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>
+#import <CoreTelephony/CTCarrier.h>
+#import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import "MACAddress.h"
 
 #define UUID_USER_DEFAULTS_KEY @"APPPaoPao_UUID"
@@ -37,16 +39,14 @@
 -(void)prepareHttpHeaders:(NSMutableURLRequest *)request
 {
     NSString *key = [[AppPaoPao sharedConnection] apiKey];
-    NSLog(@"key: %@", key);
     NSString *timestamp = [NSString stringWithFormat:@"%f", [[[NSDate alloc] init] timeIntervalSince1970]];
-    NSLog(@"timestamp: %@", timestamp);
     NSString *uuid = [self getUUID];
-    NSLog(@"uuid: %@", uuid);
     NSString *macaddress = [MACAddress address];
-    NSLog(@"macaddress: %@", macaddress);
+    NSString *carrierName = [self getCarrierName];
+    NSString *model =[[UIDevice currentDevice] model];
+    NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
     NSString *signature = [self getSignature:request timestamp:timestamp];
-    NSLog(@"signature: %@", signature);
-    NSString *authorization = [NSString stringWithFormat:@"APP key=\"%@\", timestamp=\"%@\", uuid=\"%@\", macaddress=\"%@\", signature=\"%@\"", key, timestamp, uuid, macaddress, signature];
+    NSString *authorization = [NSString stringWithFormat:@"APP key=\"%@\", timestamp=\"%@\", uuid=\"%@\", macaddress=\"%@\", carriername=\"%@\", model=\"%@\", systemversion=\"%@\", signature=\"%@\"", key, timestamp, uuid, macaddress, carrierName, model, systemVersion, signature];
     [request setValue:authorization forHTTPHeaderField:@"AUTHORIZATION"];
 }
 
@@ -86,5 +86,13 @@
     }
     
     return uuidString;
+}
+
+-(NSString *)getCarrierName
+{
+    CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
+    CTCarrier *carrier = [networkInfo subscriberCellularProvider];
+
+    return [carrier carrierName];
 }
 @end
