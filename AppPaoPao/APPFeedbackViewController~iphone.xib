@@ -42,9 +42,9 @@
 					<object class="IBUIImageView" id="327766239">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{320, 481}</string>
+						<string key="NSFrameSize">{320, 461}</string>
 						<reference key="NSSuperview" ref="191373211"/>
-						<reference key="NSNextKeyView" ref="195703633"/>
+						<reference key="NSNextKeyView" ref="828157650"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -137,7 +137,7 @@
 					<object class="IBUITextView" id="661047299">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{15, 175}, {290, 245}}</string>
+						<string key="NSFrame">{{15, 175}, {290, 197}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="765738110"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -163,8 +163,9 @@
 					<object class="IBUIButton" id="74021065">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{224, 435}, {76, 31}}</string>
+						<string key="NSFrame">{{224, 419}, {76, 31}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -199,7 +200,7 @@
 					<object class="IBUIButton" id="765738110">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 435}, {76, 31}}</string>
+						<string key="NSFrame">{{20, 419}, {76, 31}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSNextKeyView" ref="74021065"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -220,7 +221,7 @@
 						<reference key="IBUIFontDescription" ref="1018736928"/>
 						<reference key="IBUIFont" ref="322225713"/>
 					</object>
-					<object class="IBUILabel" id="195703633">
+					<object class="IBUILabel" id="828157650">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{66, 7}, {189, 38}}</string>
@@ -361,11 +362,11 @@
 							<reference ref="657762827"/>
 							<reference ref="36768947"/>
 							<reference ref="327766239"/>
-							<reference ref="765738110"/>
 							<reference ref="805326985"/>
-							<reference ref="74021065"/>
-							<reference ref="195703633"/>
+							<reference ref="828157650"/>
 							<reference ref="661047299"/>
+							<reference ref="765738110"/>
+							<reference ref="74021065"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -424,7 +425,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">94</int>
-						<reference key="object" ref="195703633"/>
+						<reference key="object" ref="828157650"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -457,7 +458,7 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="cancel-btn.png">{76, 31}</string>
-			<string key="iphone-bg.png">{320, 481}</string>
+			<string key="iphone-bg.png">{320, 461}</string>
 			<string key="send-btn.png">{76, 31}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">2083</string>

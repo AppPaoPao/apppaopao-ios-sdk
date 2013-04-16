@@ -10,5 +10,6 @@
 
 @interface APPHttpClient : NSObject
 
+-(void) sendRate:(Boolean)like;
 -(void) sendFeedback:(NSString *)title content:(NSString *)content userEmail:(NSString *)email userPhone:(NSString *)phone;
 @end

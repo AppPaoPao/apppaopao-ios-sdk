@@ -18,18 +18,28 @@
 
 @implementation APPHttpClient
 
+-(void) sendRate:(Boolean)like
+{
+    NSLog(@"send rate");
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/rates.json"]];
+    NSString *rateValue = like ? @"true" : @"false";
+    NSDictionary *rateDict = [[NSDictionary alloc] initWithObjects:@[rateValue] forKeys:@[@"rate"]];
+    
+    [request setHTTPMethod:@"POST"];
+    [self prepareHttpBody:request dict:rateDict];
+    [self prepareHttpHeaders:request];
+    
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [connection start];
+}
+
 -(void) sendFeedback:(NSString *)title content:(NSString *)content userEmail:(NSString *)email userPhone:(NSString *)phone
 {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/feedbacks.json"]];
     NSDictionary *feedbackDict = [[NSDictionary alloc] initWithObjects:@[title, content, email, phone] forKeys:@[@"title", @"content", @"email", @"phone"]];
-    NSData *requestData = [NSJSONSerialization dataWithJSONObject:feedbackDict
-                                                          options:NSJSONWritingPrettyPrinted
-                                                            error:nil];
     
     [request setHTTPMethod:@"POST"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"content-type"];
-    [request setValue:@"application/json" forHTTPHeaderField:@"accept"];
-    [request setHTTPBody:requestData];
+    [self prepareHttpBody:request dict:feedbackDict];
     [self prepareHttpHeaders:request];
     
     NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
@@ -38,6 +48,9 @@
 
 -(void)prepareHttpHeaders:(NSMutableURLRequest *)request
 {
+    [request setValue:@"application/json" forHTTPHeaderField:@"content-type"];
+    [request setValue:@"application/json" forHTTPHeaderField:@"accept"];
+    
     NSString *key = [[AppPaoPao sharedConnection] apiKey];
     NSString *timestamp = [NSString stringWithFormat:@"%f", [[[NSDate alloc] init] timeIntervalSince1970]];
     NSString *uuid = [self getUUID];
@@ -48,6 +61,14 @@
     NSString *signature = [self getSignature:request timestamp:timestamp];
     NSString *authorization = [NSString stringWithFormat:@"APP key=\"%@\", timestamp=\"%@\", uuid=\"%@\", macaddress=\"%@\", carriername=\"%@\", model=\"%@\", systemversion=\"%@\", signature=\"%@\"", key, timestamp, uuid, macaddress, carrierName, model, systemVersion, signature];
     [request setValue:authorization forHTTPHeaderField:@"AUTHORIZATION"];
+}
+
+-(void) prepareHttpBody:(NSMutableURLRequest *)request dict:(NSDictionary *)requestDict
+{
+    NSData *requestData = [NSJSONSerialization dataWithJSONObject:requestDict
+                                                          options:NSJSONWritingPrettyPrinted
+                                                            error:nil];
+    [request setHTTPBody:requestData];
 }
 
 -(NSString *)getSignature:(NSMutableURLRequest *)request timestamp:(NSString *)timestamp

@@ -27,6 +27,9 @@
 		916CA919171A46BA005452B9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916CA918171A46BA005452B9 /* CoreTelephony.framework */; };
 		916CA91E171C0378005452B9 /* APPRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 916CA91D171C0377005452B9 /* APPRate.m */; };
 		917496631716845200A2F183 /* MACAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 917496621716845200A2F183 /* MACAddress.m */; };
+		91E72633171CFD0A00F17E91 /* APPFeedbackViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916CA91717199F2D005452B9 /* APPFeedbackViewController~ipad.xib */; };
+		91E72634171CFD2E00F17E91 /* ipad-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 916CA91417199B58005452B9 /* ipad-bg.png */; };
+		91E72635171CFD2E00F17E91 /* ipad-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916CA91517199B58005452B9 /* ipad-bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -251,12 +254,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				916CA904171989E9005452B9 /* APPFeedbackViewController~iphone.xib in Resources */,
+				91E72633171CFD0A00F17E91 /* APPFeedbackViewController~ipad.xib in Resources */,
 				916CA905171989EE005452B9 /* cancel-btn.png in Resources */,
 				916CA906171989EE005452B9 /* cancel-btn@2x.png in Resources */,
 				916CA907171989EE005452B9 /* send-btn.png in Resources */,
 				916CA908171989EE005452B9 /* send-btn@2x.png in Resources */,
 				916CA909171989EE005452B9 /* iphone-bg.png in Resources */,
 				916CA90A171989EE005452B9 /* iphone-bg@2x.png in Resources */,
+				91E72634171CFD2E00F17E91 /* ipad-bg.png in Resources */,
+				91E72635171CFD2E00F17E91 /* ipad-bg@2x.png in Resources */,
 				916CA8FF1719896C005452B9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +445,7 @@
 				916CA9031719896C005452B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

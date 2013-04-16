@@ -8,6 +8,7 @@
 
 #import "APPRate.h"
 #import "AppPaoPao.h"
+#import "APPHttpClient.h"
 
 @implementation APPRate
 
@@ -31,13 +32,15 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    APPHttpClient *client = [[APPHttpClient alloc] init];
     if (buttonIndex == 0) {
+        [client sendRate:TRUE];
         NSString *str = [NSString stringWithFormat:
                          @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=%@",
                          [[AppPaoPao sharedConnection] appId]];
-        NSLog(str);
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
     } else {
+        [client sendRate:FALSE];
         [AppPaoPao presentFeedbackFromViewController:self.viewController];
     }
 }
