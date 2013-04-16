@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9123BC42171950D70020054D /* APPHttpClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9164B7DC16F4BB95007D6824 /* APPHttpClient.h */; };
-		9123BC43171950DB0020054D /* MACAddress.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 917496611716845200A2F183 /* MACAddress.h */; };
+		91486B23171D8EE70002E98D /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 91486B22171D8EE70002E98D /* UIDevice-Hardware.m */; };
+		91486B24171D8F330002E98D /* UIDevice-Hardware.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91486B21171D8EE70002E98D /* UIDevice-Hardware.h */; };
+		91486B25171D8F3A0002E98D /* APPRate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 916CA91C171C0377005452B9 /* APPRate.h */; };
 		9164B7DE16F4BB96007D6824 /* APPHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9164B7DD16F4BB95007D6824 /* APPHttpClient.m */; };
 		9165F5EB16F22A17006C7584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9165F5EA16F22A17006C7584 /* Foundation.framework */; };
 		9165F5F016F22A17006C7584 /* AppPaoPao.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9165F5EF16F22A17006C7584 /* AppPaoPao.h */; };
@@ -26,7 +28,6 @@
 		916CA90A171989EE005452B9 /* iphone-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 917FA3D117191DC200AEE795 /* iphone-bg@2x.png */; };
 		916CA919171A46BA005452B9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 916CA918171A46BA005452B9 /* CoreTelephony.framework */; };
 		916CA91E171C0378005452B9 /* APPRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 916CA91D171C0377005452B9 /* APPRate.m */; };
-		917496631716845200A2F183 /* MACAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 917496621716845200A2F183 /* MACAddress.m */; };
 		91E72633171CFD0A00F17E91 /* APPFeedbackViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 916CA91717199F2D005452B9 /* APPFeedbackViewController~ipad.xib */; };
 		91E72634171CFD2E00F17E91 /* ipad-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 916CA91417199B58005452B9 /* ipad-bg.png */; };
 		91E72635171CFD2E00F17E91 /* ipad-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 916CA91517199B58005452B9 /* ipad-bg@2x.png */; };
@@ -39,7 +40,8 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
-				9123BC43171950DB0020054D /* MACAddress.h in CopyFiles */,
+				91486B25171D8F3A0002E98D /* APPRate.h in CopyFiles */,
+				91486B24171D8F330002E98D /* UIDevice-Hardware.h in CopyFiles */,
 				9123BC42171950D70020054D /* APPHttpClient.h in CopyFiles */,
 				9165F6D116F30E41006C7584 /* APPFeedbackViewController.h in CopyFiles */,
 				9165F5F016F22A17006C7584 /* AppPaoPao.h in CopyFiles */,
@@ -49,6 +51,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		91486B21171D8EE70002E98D /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		91486B22171D8EE70002E98D /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		9164B7DC16F4BB95007D6824 /* APPHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPHttpClient.h; sourceTree = "<group>"; };
 		9164B7DD16F4BB95007D6824 /* APPHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPHttpClient.m; sourceTree = "<group>"; };
 		9165F5E716F22A17006C7584 /* libAppPaoPao.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppPaoPao.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,8 +74,6 @@
 		916CA918171A46BA005452B9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		916CA91C171C0377005452B9 /* APPRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPRate.h; sourceTree = "<group>"; };
 		916CA91D171C0377005452B9 /* APPRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPRate.m; sourceTree = "<group>"; };
-		917496611716845200A2F183 /* MACAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACAddress.h; sourceTree = "<group>"; };
-		917496621716845200A2F183 /* MACAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACAddress.m; sourceTree = "<group>"; };
 		917FA3D017191C0D00AEE795 /* iphone-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-bg.png"; sourceTree = "<group>"; };
 		917FA3D117191DC200AEE795 /* iphone-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iphone-bg@2x.png"; sourceTree = "<group>"; };
 		917FA3D2171922B000AEE795 /* cancel-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-btn.png"; sourceTree = "<group>"; };
@@ -143,8 +145,8 @@
 				916CA91D171C0377005452B9 /* APPRate.m */,
 				9164B7DC16F4BB95007D6824 /* APPHttpClient.h */,
 				9164B7DD16F4BB95007D6824 /* APPHttpClient.m */,
-				917496611716845200A2F183 /* MACAddress.h */,
-				917496621716845200A2F183 /* MACAddress.m */,
+				91486B21171D8EE70002E98D /* UIDevice-Hardware.h */,
+				91486B22171D8EE70002E98D /* UIDevice-Hardware.m */,
 				917FA3D2171922B000AEE795 /* cancel-btn.png */,
 				917FA3D3171922B000AEE795 /* cancel-btn@2x.png */,
 				917FA3D4171922B000AEE795 /* send-btn.png */,
@@ -277,8 +279,8 @@
 				9165F5F216F22A17006C7584 /* AppPaoPao.m in Sources */,
 				9165F5FB16F22A3E006C7584 /* APPFeedbackViewController.m in Sources */,
 				9164B7DE16F4BB96007D6824 /* APPHttpClient.m in Sources */,
-				917496631716845200A2F183 /* MACAddress.m in Sources */,
 				916CA91E171C0378005452B9 /* APPRate.m in Sources */,
+				91486B23171D8EE70002E98D /* UIDevice-Hardware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

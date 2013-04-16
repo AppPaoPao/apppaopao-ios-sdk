@@ -11,3 +11,5 @@
 3. Add "libAppPaoPao.a" to "Linked Frameworks and Libraries"
 
 4. Coppy "AppPaoPaoResources" to "Copy Bundle Resources"
+
+5. Add "-ObjC" to "Other Linker Flags" in Build Settings

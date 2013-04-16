@@ -12,6 +12,7 @@
 #import <CommonCrypto/CommonHMAC.h>
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
+#import "UIDevice-Hardware.h"
 #import "MACAddress.h"
 
 #define UUID_USER_DEFAULTS_KEY @"APPPaoPao_UUID"
@@ -20,7 +21,6 @@
 
 -(void) sendRate:(Boolean)like
 {
-    NSLog(@"send rate");
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/rates.json"]];
     NSString *rateValue = like ? @"true" : @"false";
     NSDictionary *rateDict = [[NSDictionary alloc] initWithObjects:@[rateValue] forKeys:@[@"rate"]];
@@ -54,12 +54,12 @@
     NSString *key = [[AppPaoPao sharedConnection] apiKey];
     NSString *timestamp = [NSString stringWithFormat:@"%f", [[[NSDate alloc] init] timeIntervalSince1970]];
     NSString *uuid = [self getUUID];
-    NSString *macaddress = [MACAddress address];
+    NSString *macaddress = [[UIDevice currentDevice] macaddress];
     NSString *carrierName = [self getCarrierName];
-    NSString *model =[[UIDevice currentDevice] model];
+    NSString *platform =[[UIDevice currentDevice] platformString];
     NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
     NSString *signature = [self getSignature:request timestamp:timestamp];
-    NSString *authorization = [NSString stringWithFormat:@"APP key=\"%@\", timestamp=\"%@\", uuid=\"%@\", macaddress=\"%@\", carriername=\"%@\", model=\"%@\", systemversion=\"%@\", signature=\"%@\"", key, timestamp, uuid, macaddress, carrierName, model, systemVersion, signature];
+    NSString *authorization = [NSString stringWithFormat:@"APP key=\"%@\", timestamp=\"%@\", uuid=\"%@\", macaddress=\"%@\", carriername=\"%@\", platform=\"%@\", systemversion=\"%@\", signature=\"%@\"", key, timestamp, uuid, macaddress, carrierName, platform, systemVersion, signature];
     [request setValue:authorization forHTTPHeaderField:@"AUTHORIZATION"];
 }
 
