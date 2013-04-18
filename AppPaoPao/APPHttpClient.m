@@ -13,7 +13,6 @@
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 #import "UIDevice-Hardware.h"
-#import "MACAddress.h"
 
 #define UUID_USER_DEFAULTS_KEY @"APPPaoPao_UUID"
 
