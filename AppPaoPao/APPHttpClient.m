@@ -20,7 +20,7 @@
 
 -(void) sendRate:(Boolean)like
 {
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/rates.json"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apppaopao.com/rates.json"]];
     NSString *rateValue = like ? @"true" : @"false";
     NSDictionary *rateDict = [[NSDictionary alloc] initWithObjects:@[rateValue] forKeys:@[@"rate"]];
     
@@ -34,7 +34,7 @@
 
 -(void) sendFeedback:(NSString *)title content:(NSString *)content userEmail:(NSString *)email userPhone:(NSString *)phone
 {
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://localhost:3000/feedbacks.json"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apppaopao.com/feedbacks.json"]];
     NSDictionary *feedbackDict = [[NSDictionary alloc] initWithObjects:@[title, content, email, phone] forKeys:@[@"title", @"content", @"email", @"phone"]];
     
     [request setHTTPMethod:@"POST"];
