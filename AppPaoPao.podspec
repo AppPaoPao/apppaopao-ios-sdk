@@ -8,8 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/AppPaoPao/apppaopao-ios-sdk.git", commit: 'c8e5d62022' }#, :tag => "0.0.1" }
   s.platform     = :ios
   s.source_files = "AppPaoPao/*.{h,m}"
-  s.preserve_paths = "libAppPaoPao.a"
-  s.resources    = "AppPaoPaoResources.bundle"
+  s.preserve_paths = 'AppPaoPao.xcodeproj', 'AppPaoPaoResources'
 
   s.frameworks   = 'CoreGraphics', 'Foundation', 'UIKit'
   s.weak_frameworks = 'CoreTelephony'
@@ -38,4 +37,17 @@ Pod::Spec.new do |s|
   #
   # s.dependency 'JSONKit', '~> 1.4'
 
+  def s.post_install(target_installer)
+    puts "\nGenerating apppaopao-ios-sdk resources bundle\n".yellow if config.verbose?
+    Dir.chdir File.join(config.project_pods_root, 'AppPaoPao') do
+      command = "xcodebuild -project AppPaoPao.xcodeproj -target AppPaoPaoResources CONFIGURATION_BUILD_DIR=../Resources"
+      command << " 2>&1 > /dev/null" unless config.verbose?
+      unless system(command)
+        raise ::Pod::Informative, "Failed to generate AppPaoPao resources bundle"
+      end
+    end
+    File.open(File.join(config.project_pods_root, target_installer.target_definition.copy_resources_script_name), 'a') do |file|
+      file.puts "install_resource 'Resources/AppPaoPao.bundle'"
+    end
+  end
 end
