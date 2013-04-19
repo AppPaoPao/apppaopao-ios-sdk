@@ -1,15 +1,15 @@
 Pod::Spec.new do |s|
   s.name         = "AppPaoPaoSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.license      = 'BSD'
   s.summary      = "AppPaoPao ios sdk."
   s.homepage     = "http://www.apppaopao.com"
   s.author       = { "Richard Huang" => "flyerhzm@gmail.com" }
-  s.source       = { :git => "https://github.com/AppPaoPao/apppaopao-ios-sdk.git", commit: 'c8e5d62022' }#, :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/AppPaoPao/apppaopao-ios-sdk.git", :tag => "0.0.2" }
   s.platform     = :ios
   s.source_files = "AppPaoPao/*.{h,m}"
-  s.resources    = "AppPaoPao/*.png", "AppPaoPao/*.xib"
-  s.preserve_paths = 'AppPaoPao.xcodeproj', 'AppPaoPao/Resources', 'AppPaoPaoResources'
+  s.resources    = "AppPaoPao/Resources/*.{xib,png}"
+  s.preserve_paths = 'AppPaoPao.xcodeproj', 'AppPaoPaoResources'
 
   s.frameworks   = 'CoreGraphics', 'Foundation', 'UIKit'
   s.weak_frameworks = 'CoreTelephony'
