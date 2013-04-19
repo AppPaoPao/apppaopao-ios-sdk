@@ -8,6 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/AppPaoPao/apppaopao-ios-sdk.git", commit: 'c8e5d62022' }#, :tag => "0.0.1" }
   s.platform     = :ios
   s.source_files = "AppPaoPao/*.{h,m}"
+  s.resources    = "AppPaoPao/*.png", "AppPaoPao/*.xib"
   s.preserve_paths = 'AppPaoPao.xcodeproj', 'AppPaoPaoResources'
 
   s.frameworks   = 'CoreGraphics', 'Foundation', 'UIKit'
