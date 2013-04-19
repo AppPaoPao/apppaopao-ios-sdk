@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   #
   # s.dependency 'JSONKit', '~> 1.4'
 
-  def s.post_install(target_installer)
+  def s.post_install(target)
     if Version.new(Pod::VERSION) >= Version.new('0.16.999')
       sandbox_root = target.sandbox_dir
     else
