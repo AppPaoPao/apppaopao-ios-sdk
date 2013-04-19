@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "AppPaoPao"
+  s.name         = "AppPaoPaoSDK"
   s.version      = "0.0.1"
   s.license      = 'BSD'
   s.summary      = "AppPaoPao ios sdk."
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
       sandbox_root = config.project_pods_root
     end
 
-    Dir.chdir File.join(sandbox_root, 'AppPaoPao') do
+    Dir.chdir File.join(sandbox_root, 'AppPaoPaoSDK') do
       command = "xcodebuild -project AppPaoPao.xcodeproj -target AppPaoPaoResources CONFIGURATION_BUILD_DIR=../Resources"
       command << " 2>&1 > /dev/null"
       unless system(command)
