@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source_files = "AppPaoPao/*.{h,m}"
   s.resources    = "AppPaoPao/*.png", "AppPaoPao/*.xib"
-  s.preserve_paths = 'AppPaoPao.xcodeproj', 'AppPaoPaoResources'
+  s.preserve_paths = 'AppPaoPao.xcodeproj', 'AppPaoPao/Resources'
 
   s.frameworks   = 'CoreGraphics', 'Foundation', 'UIKit'
   s.weak_frameworks = 'CoreTelephony'
