@@ -1,15 +1,3 @@
 # AppPaoPao
 
-
-## How to use
-
-1. Copy to project
-
-2. Edit Schema, under "Build" tab, add "AppPaoPao" and
-"AppPaoPaoResources" targets
-
-3. Add "libAppPaoPao.a" to "Linked Frameworks and Libraries"
-
-4. Coppy "AppPaoPaoResources" to "Copy Bundle Resources"
-
-5. Add "-ObjC" to "Other Linker Flags" in Build Settings
+See our platform [here](http://www.apppaopao.com)
