@@ -19,24 +19,12 @@
 
 static AppPaoPao *sharedConnection = nil;
 
-+ (void)setApiKey:(NSString *)apiKey
++ (void) initWithApiKey:(NSString *)apiKey apiSecret:(NSString *)apiSecret appId:(NSString *)appId appName:(NSString *)appName
 {
     [self sharedConnection].apiKey = apiKey;
-}
-
-+ (void)setApiSecret:(NSString *)apiSecret
-{
     [self sharedConnection].apiSecret = apiSecret;
-}
-
-+ (void)setAppName:(NSString *)appName
-{
-    [self sharedConnection].appName = appName;
-}
-
-+ (void)setAppId:(NSString *)appId
-{
     [self sharedConnection].appId = appId;
+    [self sharedConnection].appName = appName;
 }
 
 + (void)presentFeedbackFromViewController:(UIViewController *)viewController

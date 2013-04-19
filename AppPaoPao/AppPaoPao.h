@@ -16,10 +16,7 @@
 @property (strong, nonatomic) NSString *appName;
 @property (strong, nonatomic) NSString *appId;
 
-+ (void) setApiKey:(NSString *)apiKey;
-+ (void) setApiSecret:(NSString *)apiSecret;
-+ (void) setAppName:(NSString *)appName;
-+ (void) setAppId:(NSString *)appId;
++ (void) initWithApiKey:(NSString *)apiKey apiSecret:(NSString *)apiSecret appId:(NSString *)appId appName:(NSString *)appName;
 + (void) presentFeedbackFromViewController:(UIViewController *)controller;
 + (void) rateApp:(UIViewController *)controller;
 + (AppPaoPao *) sharedConnection;
