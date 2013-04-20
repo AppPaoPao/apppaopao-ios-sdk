@@ -15,8 +15,7 @@
 #import "UIDevice-Hardware.h"
 
 #define UUID_USER_DEFAULTS_KEY @"APPPaoPao_UUID"
-//#define HTTP_HOST @"http://www.apppaopao.com"
-#define HTTP_HOST @"http://localhost:3000"
+#define HTTP_HOST @"http://www.apppaopao.com"
 
 @implementation APPHttpClient
 
