@@ -15,12 +15,27 @@
 #import "UIDevice-Hardware.h"
 
 #define UUID_USER_DEFAULTS_KEY @"APPPaoPao_UUID"
+//#define HTTP_HOST @"http://www.apppaopao.com"
+#define HTTP_HOST @"http://localhost:3000"
 
 @implementation APPHttpClient
 
+-(void) sync
+{
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/sync.json", HTTP_HOST]]];
+    NSDictionary *syncDict = [[NSDictionary alloc] init];
+    
+    [request setHTTPMethod:@"POST"];
+    [self prepareHttpBody:request dict:syncDict];
+    [self prepareHttpHeaders:request];
+    
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    [connection start];
+}
+
 -(void) sendRate:(Boolean)like
 {
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apppaopao.com/rates.json"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/rates.json", HTTP_HOST]]];
     NSString *rateValue = like ? @"true" : @"false";
     NSDictionary *rateDict = [[NSDictionary alloc] initWithObjects:@[rateValue] forKeys:@[@"rate"]];
     
@@ -34,7 +49,7 @@
 
 -(void) sendFeedback:(NSString *)title content:(NSString *)content userEmail:(NSString *)email userPhone:(NSString *)phone
 {
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.apppaopao.com/feedbacks.json"]];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/feedbacks.json", HTTP_HOST]]];
     NSDictionary *feedbackDict = [[NSDictionary alloc] initWithObjects:@[title, content, email, phone] forKeys:@[@"title", @"content", @"email", @"phone"]];
     
     [request setHTTPMethod:@"POST"];

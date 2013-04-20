@@ -9,6 +9,7 @@
 #import "AppPaoPao.h"
 #import "APPFeedbackViewController.h"
 #import "APPRate.h"
+#import "APPSyncer.h"
 
 @implementation AppPaoPao
 
@@ -25,6 +26,8 @@ static AppPaoPao *sharedConnection = nil;
     [self sharedConnection].apiSecret = apiSecret;
     [self sharedConnection].appId = appId;
     [self sharedConnection].appName = appName;
+    APPSyncer *syncer = [[APPSyncer alloc] init];
+    [syncer sync];
 }
 
 + (void)presentFeedbackFromViewController:(UIViewController *)viewController

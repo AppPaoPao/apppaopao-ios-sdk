@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9100D3551722C8C8003A552E /* APPSyncer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100D3541722C8C8003A552E /* APPSyncer.m */; };
 		9123BC42171950D70020054D /* APPHttpClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9164B7DC16F4BB95007D6824 /* APPHttpClient.h */; };
 		91486B23171D8EE70002E98D /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 91486B22171D8EE70002E98D /* UIDevice-Hardware.m */; };
 		91486B24171D8F330002E98D /* UIDevice-Hardware.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 91486B21171D8EE70002E98D /* UIDevice-Hardware.h */; };
@@ -51,6 +52,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9100D3531722C8C8003A552E /* APPSyncer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPSyncer.h; sourceTree = "<group>"; };
+		9100D3541722C8C8003A552E /* APPSyncer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPSyncer.m; sourceTree = "<group>"; };
 		91486B21171D8EE70002E98D /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
 		91486B22171D8EE70002E98D /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		9164B7DC16F4BB95007D6824 /* APPHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPHttpClient.h; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				9165F5F916F22A3E006C7584 /* APPFeedbackViewController.m */,
 				916CA91C171C0377005452B9 /* APPRate.h */,
 				916CA91D171C0377005452B9 /* APPRate.m */,
+				9100D3531722C8C8003A552E /* APPSyncer.h */,
+				9100D3541722C8C8003A552E /* APPSyncer.m */,
 				9164B7DC16F4BB95007D6824 /* APPHttpClient.h */,
 				9164B7DD16F4BB95007D6824 /* APPHttpClient.m */,
 				91486B21171D8EE70002E98D /* UIDevice-Hardware.h */,
@@ -299,6 +304,7 @@
 				9164B7DE16F4BB96007D6824 /* APPHttpClient.m in Sources */,
 				916CA91E171C0378005452B9 /* APPRate.m in Sources */,
 				91486B23171D8EE70002E98D /* UIDevice-Hardware.m in Sources */,
+				9100D3551722C8C8003A552E /* APPSyncer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
