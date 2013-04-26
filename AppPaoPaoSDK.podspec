@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "AppPaoPaoSDK"
-  s.version      = "0.1.0"
+  s.version      = "1.0.0"
   s.license      = 'BSD'
   s.summary      = "AppPaoPao ios sdk."
   s.homepage     = "http://www.apppaopao.com"
   s.author       = { "Richard Huang" => "flyerhzm@gmail.com" }
-  s.source       = { :git => "https://github.com/AppPaoPao/apppaopao-ios-sdk.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/AppPaoPao/apppaopao-ios-sdk.git", :tag => "1.0.0" }
   s.platform     = :ios
   s.source_files = "AppPaoPao/*.{h,m}"
   s.resources    = "AppPaoPao/Resources/*.{xib,png}"
