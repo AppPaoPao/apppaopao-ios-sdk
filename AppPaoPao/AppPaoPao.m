@@ -15,17 +15,15 @@
 
 @synthesize apiKey;
 @synthesize apiSecret;
-@synthesize appName;
 @synthesize appId;
 
 static AppPaoPao *sharedConnection = nil;
 
-+ (void) initWithApiKey:(NSString *)apiKey apiSecret:(NSString *)apiSecret appId:(NSString *)appId appName:(NSString *)appName
++ (void) initWithApiKey:(NSString *)apiKey apiSecret:(NSString *)apiSecret appId:(NSString *)appId
 {
     [self sharedConnection].apiKey = apiKey;
     [self sharedConnection].apiSecret = apiSecret;
     [self sharedConnection].appId = appId;
-    [self sharedConnection].appName = appName;
     APPSyncer *syncer = [[APPSyncer alloc] init];
     [syncer sync];
 }

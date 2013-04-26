@@ -73,10 +73,10 @@
     NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
     NSString *signature = [self getSignature:request timestamp:timestamp];
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-    NSString *displayname = [infoDictionary objectForKey:@"CFBundleDisplayName"];
-    NSString *bundleidentifier = [infoDictionary objectForKey:@"CFBundleIdentifier"];
-    NSString *bundleversion = [infoDictionary objectForKey:@"CFBundleVersion"];
-    NSString *authorization = [NSString stringWithFormat:@"APP key=\"%@\", timestamp=\"%@\", uuid=\"%@\", macaddress=\"%@\", carriername=\"%@\", platform=\"%@\", systemversion=\"%@\", displayname=\"%@\", bundleidentifier=\"%@\", bundleversion=\"%@\", signature=\"%@\"", key, timestamp, uuid, macaddress, carrierName, platform, systemVersion, displayname, bundleidentifier, bundleversion, signature];
+    NSString *bundleDisplayname = [infoDictionary objectForKey:@"CFBundleDisplayName"];
+    NSString *bundleIdentifier = [infoDictionary objectForKey:@"CFBundleIdentifier"];
+    NSString *bundleVersion = [infoDictionary objectForKey:@"CFBundleVersion"];
+    NSString *authorization = [NSString stringWithFormat:@"APP key=\"%@\", timestamp=\"%@\", uuid=\"%@\", macaddress=\"%@\", carriername=\"%@\", platform=\"%@\", systemversion=\"%@\", displayname=\"%@\", bundleidentifier=\"%@\", bundleversion=\"%@\", signature=\"%@\"", key, timestamp, uuid, macaddress, carrierName, platform, systemVersion,bundleDisplayname, bundleIdentifier, bundleVersion, signature];
     [request setValue:authorization forHTTPHeaderField:@"AUTHORIZATION"];
 }
 

@@ -15,8 +15,9 @@
 - (void)popup:(UIViewController *)viewController
 {
     self.viewController = viewController;
+    NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"评价"
-                                                      message:[NSString stringWithFormat:@"你喜欢%@吗？", [[AppPaoPao sharedConnection] appName]]
+                                                        message:[NSString stringWithFormat:@"你喜欢%@吗？", appName]
                                                      delegate:self
                                             cancelButtonTitle:@"喜欢"
                                             otherButtonTitles:@"不喜欢", nil];
