@@ -15,7 +15,8 @@
 #import "UIDevice-Hardware.h"
 
 #define UUID_USER_DEFAULTS_KEY @"APPPaoPao_UUID"
-#define HTTP_HOST @"http://www.apppaopao.com"
+#define HTTP_HOST @"http://localhost:3000"
+//#define HTTP_HOST @"http://www.apppaopao.com"
 
 @implementation APPHttpClient
 
@@ -28,7 +29,7 @@
     [self prepareHttpBody:request dict:syncDict];
     [self prepareHttpHeaders:request];
     
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:nil];
     [connection start];
 }
 
@@ -42,7 +43,7 @@
     [self prepareHttpBody:request dict:rateDict];
     [self prepareHttpHeaders:request];
     
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:nil];
     [connection start];
 }
 
@@ -132,5 +133,50 @@
     CTCarrier *carrier = [networkInfo subscriberCellularProvider];
 
     return [carrier carrierName];
+}
+
+#pragma mark NSURLConnectionDelegete
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    NSInteger statusCode = [(NSHTTPURLResponse*) response statusCode];
+    if (statusCode == 200 || statusCode == 201) {
+        [self popupHUD:@"AppPaoPaoResources.bundle/check-mark.png" label:@"发送成功！"];
+    }
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+	[self popupHUD:@"" label:@"发送失败！"];
+}
+
+- (void)popupHUD:(NSString *)imagePath label:(NSString *)label {
+    UIViewController *topController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    
+    HUD = [[MBProgressHUD alloc] initWithView:topController.view];
+	[topController.view addSubview:HUD];
+	
+    if (![imagePath isEqualToString:@""]) {
+        HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imagePath]];
+    }
+	
+	// Set custom view mode
+	HUD.mode = MBProgressHUDModeCustomView;
+	
+	HUD.delegate = self;
+	HUD.labelText = label;
+	
+	[HUD show:YES];
+	[HUD hide:YES afterDelay:2];
+}
+
+#pragma mark MBProgressHUDDelegate methods
+- (void)hudWasHidden:(MBProgressHUD *)hud {
+	// Remove HUD from screen when the HUD was hidded
+	[HUD removeFromSuperview];
+	HUD = nil;
 }
 @end

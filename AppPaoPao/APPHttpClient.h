@@ -7,8 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MBProgressHUD.h"
 
-@interface APPHttpClient : NSObject
+@interface APPHttpClient : NSObject <MBProgressHUDDelegate>
+{
+    MBProgressHUD *HUD;
+}
 
 -(void) sync;
 -(void) sendRate:(Boolean)like;
