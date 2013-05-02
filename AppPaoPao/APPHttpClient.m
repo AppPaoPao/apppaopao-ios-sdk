@@ -15,8 +15,7 @@
 #import "UIDevice-Hardware.h"
 
 #define UUID_USER_DEFAULTS_KEY @"APPPaoPao_UUID"
-#define HTTP_HOST @"http://localhost:3000"
-//#define HTTP_HOST @"http://www.apppaopao.com"
+#define HTTP_HOST @"http://www.apppaopao.com"
 
 @implementation APPHttpClient
 
@@ -131,7 +130,7 @@
 {
     CTTelephonyNetworkInfo *networkInfo = [[CTTelephonyNetworkInfo alloc] init];
     CTCarrier *carrier = [networkInfo subscriberCellularProvider];
-
+    
     return [carrier carrierName];
 }
 
@@ -140,6 +139,8 @@
     NSInteger statusCode = [(NSHTTPURLResponse*) response statusCode];
     if (statusCode == 200 || statusCode == 201) {
         [self popupHUD:@"AppPaoPaoResources.bundle/check-mark.png" label:@"发送成功！"];
+    } else {
+        [self popupHUD:@"" label:@"发送失败！"];
     }
 }
 
