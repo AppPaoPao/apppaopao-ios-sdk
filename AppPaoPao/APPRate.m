@@ -12,9 +12,8 @@
 
 @implementation APPRate
 
-- (void)popup:(UIViewController *)viewController
+- (void)popup
 {
-    self.viewController = viewController;
     NSString *appName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"评价"
                                                         message:[NSString stringWithFormat:@"你喜欢%@吗？", appName]
@@ -42,7 +41,7 @@
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
     } else {
         [client sendRate:FALSE];
-        [AppPaoPao presentFeedbackFromViewController:self.viewController];
+        [AppPaoPao presentFeedback];
     }
 }
 @end

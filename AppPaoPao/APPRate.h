@@ -10,6 +10,5 @@
 
 @interface APPRate : NSObject <UIAlertViewDelegate>
 
-@property (nonatomic, retain) UIViewController *viewController;
-- (void)popup:(UIViewController *)viewController;
+- (void)popup;
 @end

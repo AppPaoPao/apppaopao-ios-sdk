@@ -28,17 +28,18 @@ static AppPaoPao *sharedConnection = nil;
     [syncer sync];
 }
 
-+ (void)presentFeedbackFromViewController:(UIViewController *)viewController
++ (void)presentFeedback
 {
     APPFeedbackViewController *vc = [[APPFeedbackViewController alloc] init];
     vc.modalPresentationStyle = UIModalPresentationFormSheet;
-    [viewController presentViewController:vc animated:TRUE completion:nil];
+    UIViewController *topController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    [topController presentViewController:vc animated:TRUE completion:nil];
 }
 
-+ (void)rateApp:(UIViewController *)viewController
++ (void)rateApp
 {
     APPRate *rate = [[APPRate alloc] init];
-    [rate popup:viewController];
+    [rate popup];
 }
 
 + (AppPaoPao *)sharedConnection
