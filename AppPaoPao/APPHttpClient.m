@@ -155,6 +155,13 @@
 
 - (void)popupHUD:(NSString *)imagePath label:(NSString *)label {
     UIViewController *topController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    while (topController.presentedViewController) {
+        if ([NSStringFromClass([topController.presentedViewController class]) isEqualToString:@"APPFeedbackViewController"]) {
+            break;
+        } else {
+            topController = topController.presentedViewController;
+        }
+    }
     
     HUD = [[MBProgressHUD alloc] initWithView:topController.view];
 	[topController.view addSubview:HUD];

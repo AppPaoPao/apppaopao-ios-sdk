@@ -33,6 +33,9 @@ static AppPaoPao *sharedConnection = nil;
     APPFeedbackViewController *vc = [[APPFeedbackViewController alloc] init];
     vc.modalPresentationStyle = UIModalPresentationFormSheet;
     UIViewController *topController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    while (topController.presentedViewController) {
+        topController = topController.presentedViewController;
+    }
     [topController presentViewController:vc animated:TRUE completion:nil];
 }
 
