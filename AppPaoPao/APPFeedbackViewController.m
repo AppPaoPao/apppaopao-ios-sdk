@@ -9,6 +9,8 @@
 #import "APPFeedbackViewController.h"
 #import "APPHttpClient.h"
 
+#define APP_EMAIL @"APP_EMAIL"
+
 @interface APPFeedbackViewController ()
 
 @end
@@ -31,6 +33,9 @@
     if (self) {
         self.view.backgroundColor = [UIColor blackColor];
         self.view.alpha = 1.0;
+        if ([[NSUserDefaults standardUserDefaults] valueForKey:APP_EMAIL]) {
+            self.emailTextField.text = [[NSUserDefaults standardUserDefaults] valueForKey:APP_EMAIL];
+        }
     }
     return self;
 }
@@ -57,6 +62,7 @@
         [message show];
         return;
     }
+    [[NSUserDefaults standardUserDefaults] setValue:self.emailTextField.text forKey:APP_EMAIL];
     APPHttpClient *client = [[APPHttpClient alloc] init];
     [client sendFeedback:self.titleTextField.text content:self.contentTextView.text userEmail:self.emailTextField.text userPhone:self.phoneTextField.text];
     [self dismissViewControllerAnimated:YES completion:NULL];
