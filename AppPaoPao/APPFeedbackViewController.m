@@ -72,7 +72,8 @@
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
-- (BOOL) textViewShouldBeginEditing:(UITextView *)textView
+#pragma mark UITextViewDelegate
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView
 {
     if(textView.tag == 0) {
         textView.text = @"";
@@ -90,5 +91,57 @@
         textView.textColor = [UIColor lightGrayColor];
         textView.tag = 0;
     }
+}
+
+- (void)textViewDidBeginEditing:(UITextField *)textView
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] != UIUserInterfaceIdiomPad) {
+        [self animateTextView:textView up:YES];
+    }
+}
+
+
+- (void)textViewDidEndEditing:(UITextField *)textView
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] != UIUserInterfaceIdiomPad) {
+        [self animateTextView:textView up:NO];
+    }
+}
+
+
+- (void)animateTextView:(UITextField*)textView up:(BOOL)up
+{
+    int animatedDistance;
+    int moveUpValue = textView.frame.origin.y + textView.frame.size.height;
+    UIInterfaceOrientation orientation =
+    [[UIApplication sharedApplication] statusBarOrientation];
+    if (orientation == UIInterfaceOrientationPortrait ||
+        orientation == UIInterfaceOrientationPortraitUpsideDown)
+    {
+        
+        animatedDistance = 216-(460-moveUpValue-60);
+    }
+    else
+    {
+        animatedDistance = 162-(320-moveUpValue-60);
+    }
+    
+    if(animatedDistance>0)
+    {
+        const int movementDistance = animatedDistance;
+        const float movementDuration = 0.3f;
+        int movement = (up ? -movementDistance : movementDistance);
+        [UIView beginAnimations: nil context: nil];
+        [UIView setAnimationBeginsFromCurrentState: YES];
+        [UIView setAnimationDuration: movementDuration];
+        self.view.frame = CGRectOffset(self.view.frame, 0, movement);
+        [UIView commitAnimations];
+    }
+}
+
+-(BOOL)textViewShouldReturn:(UITextField *)textView
+{    
+    [textView resignFirstResponder];
+    return YES;
 }
 @end
