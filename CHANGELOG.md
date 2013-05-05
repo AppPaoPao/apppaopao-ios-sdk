@@ -1,5 +1,9 @@
 # Next Release
 
+## 1.1.1 (05/05/2013)
+
+* fix popup keyboard hides text view issue
+
 ## 1.1.0 (05/02/2013)
 
 * remmeber user email
